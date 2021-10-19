@@ -43,11 +43,6 @@
     <link rel="alternate stylesheet" href="assets/css/colors/slate.css" title="slate">
     <link rel="alternate stylesheet" href="assets/css/colors/yellow.css" title="yellow">
   </head>
-  <style>
-    body {
-      z-index: -1 !important;
-    }
-  </style>
   <body class="white-vertion black-bg">
     
 <!--     Fb chat Plugin -->
@@ -62,7 +57,7 @@
       var chatbox = document.getElementById('fb-customer-chat');
       chatbox.setAttribute("page_id", "112308701227140");
       chatbox.setAttribute("attribution", "biz_inbox");
-
+      chatbox.style.zIndex =999;
       window.fbAsyncInit = function() {
         FB.init({
           xfbml            : true,
