@@ -54,11 +54,12 @@
     </div>
 
     <script>
+      var a=document.getElementById('fb-root');
+      a.style.backgroundColor="red";
       var chatbox = document.getElementById('fb-customer-chat');
       chatbox.setAttribute("page_id", "112308701227140");
       chatbox.setAttribute("attribution", "biz_inbox");
       chatbox.style.zIndex =9999999;
-      chatbox.style.height="300px";
       chatbox.style.backgroundColor="white";
       window.fbAsyncInit = function() {
         FB.init({
